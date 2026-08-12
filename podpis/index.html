@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>QR на отзыв — блоки для писем и подписи</title>
+<style>
+  :root{
+    --navy:#203B5B; --blue:#0094D9; --orange:#ED9121;
+    --paper:#EEF1F3; --card:#FFFFFF; --rule:#D5DAD8; --slate:#6B7785; --ink:#1A2430;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#141A21; --card:#1C242D; --rule:#2C3742; --slate:#93A0AD; --ink:#E6EBF0;
+      --navy:#7FA8D4; --blue:#4FB8EC;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.3rem 5rem}
+  h1{font-size:1.75rem;margin:0 0 .5rem;letter-spacing:-.02em;color:var(--navy)}
+  .lede{color:var(--slate);margin:0 0 2rem}
+  h2{font-size:1.1rem;margin:2.4rem 0 .3rem;color:var(--navy)}
+  .hint{color:var(--slate);font-size:14px;margin:0 0 1rem}
+  .card{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:1.7rem;overflow-x:auto}
+  ol{padding-left:1.3rem;margin:0 0 1rem}
+  li{margin-bottom:.4rem}
+  kbd{background:var(--paper);border:1px solid var(--rule);border-radius:3px;
+    padding:.1em .4em;font:13px ui-monospace,Consolas,monospace}
+  .warn{border-left:3px solid var(--orange);padding:.7rem 0 .7rem 1rem;color:var(--slate);font-size:14.5px;margin:1rem 0 0}
+  footer{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);
+    color:var(--slate);font-size:13.5px}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>QR на отзыв о складе</h1>
+<p class="lede">Готовые блоки для писем и подписи. Код завёрнут в ссылку: с компьютера его сканируют телефоном, с телефона по нему просто нажимают.</p>
+
+<h2>Как пользоваться</h2>
+<ol>
+  <li>Выделите нужный блок ниже прямо на этой странице</li>
+  <li>Скопируйте — <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
+  <li>Вставьте в письмо или в настройки подписи — <kbd>Ctrl</kbd> + <kbd>V</kbd></li>
+</ol>
+<p class="hint">Картинка вставится вместе со ссылкой. Текстовый адрес под кодом оставлен намеренно: в корпоративной почте картинки часто отключены, и без него блок был бы пустым местом.</p>
+
+<h2>Блок для письма</h2>
+<p class="hint">Для рассылки и для писем клиенту после отгрузки</p>
+<div class="card">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif">
+  <tr><td align="center" style="padding:0 0 12px 0">
+    <a href="https://tucha-ml.github.io/" target="_blank" style="text-decoration:none"><img src="https://tucha-ml.github.io/podpis/qr.png" width="180" height="180" alt="Оставить отзыв о складе Туча — Мировая Лавка" style="display:block;border:0;width:180px;height:180px"></a>
+  </td></tr>
+  <tr><td align="center" style="padding:0 0 6px 0;font-size:16px;line-height:1.35;font-weight:bold;color:#203B5B">Оставьте отзыв о складе</td></tr>
+  <tr><td align="center" style="padding:0 0 10px 0;font-size:13px;line-height:1.4;color:#6B7785">Наведите камеру или нажмите на код</td></tr>
+  <tr><td align="center" style="font-size:13px;line-height:1.4"><a href="https://tucha-ml.github.io/" target="_blank" style="color:#0094D9;text-decoration:underline">tucha-ml.github.io</a></td></tr>
+</table>
+</div>
+
+<h2>Компактный — для подписи менеджера</h2>
+<p class="hint">Встаёт под контакты, не занимает половину экрана</p>
+<div class="card">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif">
+  <tr>
+    <td valign="middle" style="padding:0 12px 0 0">
+      <a href="https://tucha-ml.github.io/" target="_blank" style="text-decoration:none"><img src="https://tucha-ml.github.io/podpis/qr.png" width="96" height="96" alt="Оставить отзыв" style="display:block;border:0;width:96px;height:96px"></a>
+    </td>
+    <td valign="middle" style="font-size:13px;line-height:1.5;color:#6B7785">
+      <span style="color:#203B5B;font-weight:bold">Довольны работой склада?</span><br>
+      Оставьте отзыв — это две минуты<br>
+      <a href="https://tucha-ml.github.io/" target="_blank" style="color:#0094D9;text-decoration:underline">tucha-ml.github.io</a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<h2>Для мессенджеров</h2>
+<p class="hint">В WhatsApp и Telegram картинка не сканируется — экран один. Туда отправляйте только текст</p>
+<div class="card" style="font-size:15px">
+Добрый день! Если работа склада устроила, оставьте, пожалуйста, отзыв — займёт пару минут:<br>
+<a href="https://tucha-ml.github.io/">https://tucha-ml.github.io/</a>
+</div>
+
+<h2>Скачать код картинкой</h2>
+<p class="hint">Если нужно вставить вручную или отдать в печать</p>
+<div class="card">
+<a href="https://tucha-ml.github.io/podpis/qr.png" download>qr.png</a> — для писем, сайта и презентаций<br>
+<a href="https://tucha-ml.github.io/podpis/qr.svg" download>qr.svg</a> — в типографию, масштабируется без потери качества
+</div>
+
+<div class="warn">
+Код ведёт на страницу выбора площадки: оттуда клиент попадает в Яндекс&nbsp;Карты или 2ГИС. Не просите за отзыв подарки и скидки — обе площадки за это наказывают вплоть до скрытия карточки.
+</div>
+
+<footer>
+«Туча&nbsp;— Мировая лавка», склад ответственного хранения в Химках.<br>
+Страница служебная, в поиске не показывается.
+</footer>
+
+</div>
+</body>
+</html>
