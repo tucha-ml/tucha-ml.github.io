@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Туча — Мировая Лавка. Наши сайты</title>
+<style>
+  :root{
+    --navy:#203B5B; --blue:#0094D9; --orange:#ED9121;
+    --paper:#EEF1F3; --card:#FFFFFF; --rule:#D8DEE4; --slate:#6B7785; --ink:#1A2430;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#141A21; --card:#1C242D; --rule:#2C3742; --slate:#93A0AD; --ink:#E6EBF0;
+      --navy:#7FA8D4; --blue:#4FB8EC;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    display:flex;align-items:center;justify-content:center;padding:2rem 1.2rem}
+  .sheet{width:100%;max-width:26rem;text-align:center;
+    animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.sheet{animation:none}}
+  .logo{width:172px;height:auto;display:block;margin:0 auto 1.6rem}
+  h1{font-size:1.3rem;margin:0 0 .3rem;letter-spacing:-.02em;color:var(--navy)}
+  .lede{color:var(--slate);font-size:.94rem;margin:0 0 2rem}
+  .btn{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    background:var(--navy);color:#fff;text-decoration:none;
+    padding:1rem 1.3rem;border-radius:10px;margin-bottom:.7rem;
+    transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(32,59,91,.22)}
+  .btn--alt{background:var(--card);color:var(--ink);border:1px solid var(--rule)}
+  .btn b{display:block;font-size:1.02rem;letter-spacing:-.01em}
+  .btn span{display:block;font-size:.82rem;opacity:.75;margin-top:.15rem}
+  .btn .go{font-size:1.2rem;opacity:.5;flex:none}
+  .msg{margin:1.8rem 0 0;font-size:.88rem;color:var(--slate)}
+  .msg a{font-weight:700;text-decoration:none}
+  .tg{color:#229ED9} .mx{color:#7C4DFF}
+  .foot{margin:1.8rem 0 0;font-size:.82rem;color:var(--slate)}
+  .foot a{color:var(--blue)}
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <img class="logo" src="https://tucha-ml.github.io/podpis/logo.png" alt="Туча — Мировая Лавка">
+
+  <h1>Туча&nbsp;— Мировая Лавка</h1>
+  <p class="lede">Склад ответственного хранения, 3PL оператор</p>
+
+  <a class="btn" href="https://tucha-ml.ru/" rel="noopener">
+    <span><b>tucha-ml.ru</b><span>Хранение, услуги, цены</span></span>
+    <span class="go">→</span>
+  </a>
+
+  <a class="btn btn--alt" href="https://wl-group.ru/" rel="noopener">
+    <span><b>wl-group.ru</b><span>Складская, транспортная и таможенная логистика</span></span>
+    <span class="go">→</span>
+  </a>
+
+  <p class="msg">Мы в мессенджерах:
+    <a class="tg" href="https://t.me/tucha_mirovaya_lavka" rel="noopener">Telegram</a> ·
+    <a class="mx" href="https://max.ru/u/f9LHodD0cOIAL8dbPb_Y5hPlSYfhtNegGXJKgGgTdfQtWEjiH4DSb_ExkpE" rel="noopener">MAX</a>
+  </p>
+
+  <p class="foot">
+    +7 (495) 665-82-42 · <a href="mailto:info@tucha-ml.ru">info@tucha-ml.ru</a><br>
+    Химки, десять минут от Шереметьева и МКАД
+  </p>
+
+</main>
+</body>
+</html>
